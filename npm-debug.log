@@ -1,0 +1,226 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'git', '-g' ]
+2 info using npm@3.5.2
+3 info using node@v4.7.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData git
+8 silly fetchNamedPackageData git
+9 silly mapToRegistry name git
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/git
+13 verbose request uri https://registry.npmjs.org/git
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 9:26:51 AM
+16 verbose request id 9d56a2648501be3c
+17 http request GET https://registry.npmjs.org/git
+18 http 200 https://registry.npmjs.org/git
+19 verbose headers { server: 'nginx/1.10.1',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'last-modified': 'Mon, 20 Feb 2017 03:16:08 GMT',
+19 verbose headers   etag: 'W/"58aa5f78-278b"',
+19 verbose headers   'content-encoding': 'gzip',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'content-length': '2304',
+19 verbose headers   'accept-ranges': 'bytes',
+19 verbose headers   date: 'Wed, 18 Oct 2017 06:26:51 GMT',
+19 verbose headers   via: '1.1 varnish',
+19 verbose headers   age: '0',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-served-by': 'cache-hhn1548-HHN',
+19 verbose headers   'x-cache': 'MISS',
+19 verbose headers   'x-cache-hits': '0',
+19 verbose headers   'x-timer': 'S1508308012.613644,VS0,VE2',
+19 verbose headers   vary: 'Accept-Encoding, Accept' }
+20 silly get cb [ 200,
+20 silly get   { server: 'nginx/1.10.1',
+20 silly get     'content-type': 'application/json',
+20 silly get     'last-modified': 'Mon, 20 Feb 2017 03:16:08 GMT',
+20 silly get     etag: 'W/"58aa5f78-278b"',
+20 silly get     'content-encoding': 'gzip',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'content-length': '2304',
+20 silly get     'accept-ranges': 'bytes',
+20 silly get     date: 'Wed, 18 Oct 2017 06:26:51 GMT',
+20 silly get     via: '1.1 varnish',
+20 silly get     age: '0',
+20 silly get     connection: 'keep-alive',
+20 silly get     'x-served-by': 'cache-hhn1548-HHN',
+20 silly get     'x-cache': 'MISS',
+20 silly get     'x-cache-hits': '0',
+20 silly get     'x-timer': 'S1508308012.613644,VS0,VE2',
+20 silly get     vary: 'Accept-Encoding, Accept' } ]
+21 verbose get saving git to /home/artem/.npm/registry.npmjs.org/git/.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule git@0.1.5 checking installable status
+35 silly cache add args [ 'git', null ]
+36 verbose cache add spec git
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'git',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'git',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: 'latest',
+37 silly cache add   type: 'tag' }
+38 silly addNamed git@latest
+39 verbose addNamed "latest" is being treated as a dist-tag for git
+40 info addNameTag [ 'git', 'latest' ]
+41 silly mapToRegistry name git
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/git
+45 verbose addNameTag registry:https://registry.npmjs.org/git not in flight; fetching
+46 verbose get https://registry.npmjs.org/git not expired, no request
+47 silly addNameTag next cb for git with tag latest
+48 silly addNamed git@0.1.5
+49 verbose addNamed "0.1.5" is a plain semver version for git
+50 silly mapToRegistry name git
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/git
+54 verbose addRemoteTarball https://registry.npmjs.org/git/-/git-0.1.5.tgz not in flight; adding
+55 verbose addRemoteTarball [ 'https://registry.npmjs.org/git/-/git-0.1.5.tgz',
+55 verbose addRemoteTarball   '9ef62df93f851c27542143bf52d1c68b1017ca15' ]
+56 info retry fetch attempt 1 at 9:26:51 AM
+57 info attempt registry request try #1 at 9:26:51 AM
+58 http fetch GET https://registry.npmjs.org/git/-/git-0.1.5.tgz
+59 http fetch 200 https://registry.npmjs.org/git/-/git-0.1.5.tgz
+60 silly fetchAndShaCheck shasum 9ef62df93f851c27542143bf52d1c68b1017ca15
+61 verbose addTmpTarball /tmp/npm-7677-ef72d0c4/registry.npmjs.org/git/-/git-0.1.5.tgz not in flight; adding
+62 verbose addTmpTarball already have metadata; skipping unpack for git@0.1.5
+63 silly cache afterAdd git@0.1.5
+64 verbose afterAdd /home/artem/.npm/git/0.1.5/package/package.json not in flight; writing
+65 verbose afterAdd /home/artem/.npm/git/0.1.5/package/package.json written
+66 silly fetchNamedPackageData mime
+67 silly mapToRegistry name mime
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/mime
+71 verbose request uri https://registry.npmjs.org/mime
+72 verbose request no auth needed
+73 info attempt registry request try #1 at 9:26:51 AM
+74 verbose etag W/"59b87608-7615"
+75 verbose lastModified Wed, 13 Sep 2017 00:04:24 GMT
+76 http request GET https://registry.npmjs.org/mime
+77 http 200 https://registry.npmjs.org/mime
+78 verbose headers { server: 'nginx/1.10.1',
+78 verbose headers   'content-type': 'application/json',
+78 verbose headers   'last-modified': 'Mon, 25 Sep 2017 18:38:39 GMT',
+78 verbose headers   etag: 'W/"59c94d2f-8fdd"',
+78 verbose headers   'content-encoding': 'gzip',
+78 verbose headers   'cache-control': 'max-age=300',
+78 verbose headers   'content-length': '7293',
+78 verbose headers   'accept-ranges': 'bytes',
+78 verbose headers   date: 'Wed, 18 Oct 2017 06:26:52 GMT',
+78 verbose headers   via: '1.1 varnish',
+78 verbose headers   age: '234',
+78 verbose headers   connection: 'keep-alive',
+78 verbose headers   'x-served-by': 'cache-hhn1548-HHN',
+78 verbose headers   'x-cache': 'HIT',
+78 verbose headers   'x-cache-hits': '10',
+78 verbose headers   'x-timer': 'S1508308012.030172,VS0,VE0',
+78 verbose headers   vary: 'Accept-Encoding, Accept' }
+79 silly get cb [ 200,
+79 silly get   { server: 'nginx/1.10.1',
+79 silly get     'content-type': 'application/json',
+79 silly get     'last-modified': 'Mon, 25 Sep 2017 18:38:39 GMT',
+79 silly get     etag: 'W/"59c94d2f-8fdd"',
+79 silly get     'content-encoding': 'gzip',
+79 silly get     'cache-control': 'max-age=300',
+79 silly get     'content-length': '7293',
+79 silly get     'accept-ranges': 'bytes',
+79 silly get     date: 'Wed, 18 Oct 2017 06:26:52 GMT',
+79 silly get     via: '1.1 varnish',
+79 silly get     age: '234',
+79 silly get     connection: 'keep-alive',
+79 silly get     'x-served-by': 'cache-hhn1548-HHN',
+79 silly get     'x-cache': 'HIT',
+79 silly get     'x-cache-hits': '10',
+79 silly get     'x-timer': 'S1508308012.030172,VS0,VE0',
+79 silly get     vary: 'Accept-Encoding, Accept' } ]
+80 verbose get saving mime to /home/artem/.npm/registry.npmjs.org/mime/.cache.json
+81 silly resolveWithNewModule mime@1.2.9 checking installable status
+82 silly cache add args [ 'mime@1.2.9', null ]
+83 verbose cache add spec mime@1.2.9
+84 silly cache add parsed spec Result {
+84 silly cache add   raw: 'mime@1.2.9',
+84 silly cache add   scope: null,
+84 silly cache add   name: 'mime',
+84 silly cache add   rawSpec: '1.2.9',
+84 silly cache add   spec: '1.2.9',
+84 silly cache add   type: 'version' }
+85 silly addNamed mime@1.2.9
+86 verbose addNamed "1.2.9" is a plain semver version for mime
+87 silly mapToRegistry name mime
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry uri https://registry.npmjs.org/mime
+91 verbose addNameVersion registry:https://registry.npmjs.org/mime not in flight; fetching
+92 verbose get https://registry.npmjs.org/mime not expired, no request
+93 silly mapToRegistry name mime
+94 silly mapToRegistry using default registry
+95 silly mapToRegistry registry https://registry.npmjs.org/
+96 silly mapToRegistry uri https://registry.npmjs.org/mime
+97 verbose addRemoteTarball https://registry.npmjs.org/mime/-/mime-1.2.9.tgz not in flight; adding
+98 verbose addRemoteTarball [ 'https://registry.npmjs.org/mime/-/mime-1.2.9.tgz',
+98 verbose addRemoteTarball   '009cd40867bd35de521b3b966f04e2f8d4d13d09' ]
+99 info retry fetch attempt 1 at 9:26:52 AM
+100 info attempt registry request try #1 at 9:26:52 AM
+101 http fetch GET https://registry.npmjs.org/mime/-/mime-1.2.9.tgz
+102 http fetch 200 https://registry.npmjs.org/mime/-/mime-1.2.9.tgz
+103 silly fetchAndShaCheck shasum 009cd40867bd35de521b3b966f04e2f8d4d13d09
+104 verbose addTmpTarball /tmp/npm-7677-ef72d0c4/registry.npmjs.org/mime/-/mime-1.2.9.tgz not in flight; adding
+105 verbose addTmpTarball already have metadata; skipping unpack for mime@1.2.9
+106 silly cache afterAdd mime@1.2.9
+107 verbose afterAdd /home/artem/.npm/mime/1.2.9/package/package.json not in flight; writing
+108 verbose afterAdd /home/artem/.npm/mime/1.2.9/package/package.json written
+109 silly loadAllDepsIntoIdealTree Finishing
+110 silly idealTree:prePrune lib
+110 silly idealTree:prePrune └─┬ git@0.1.5
+110 silly idealTree:prePrune   └── mime@1.2.9
+111 silly loadIdealTree Finishing
+112 silly currentTree lib
+113 silly idealTree lib
+113 silly idealTree └─┬ git@0.1.5
+113 silly idealTree   └── mime@1.2.9
+114 silly generateActionsToTake Starting
+115 silly install generateActionsToTake
+116 warn checkPermissions Missing write access to /usr/local/lib
+117 silly rollbackFailedOptional Starting
+118 silly rollbackFailedOptional Finishing
+119 silly runTopLevelLifecycles Starting
+120 silly runTopLevelLifecycles Finishing
+121 silly install printInstalled
+122 verbose stack Error: EACCES: permission denied, access '/usr/local/lib'
+122 verbose stack     at Error (native)
+123 verbose cwd /media/artem/Data/front-end/arttron/arttron
+124 error Linux 4.10.0-35-generic
+125 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "git" "-g"
+126 error node v4.7.2
+127 error npm  v3.5.2
+128 error path /usr/local/lib
+129 error code EACCES
+130 error errno -13
+131 error syscall access
+132 error Error: EACCES: permission denied, access '/usr/local/lib'
+132 error     at Error (native)
+132 error  { [Error: EACCES: permission denied, access '/usr/local/lib']
+132 error   errno: -13,
+132 error   code: 'EACCES',
+132 error   syscall: 'access',
+132 error   path: '/usr/local/lib' }
+133 error Please try running this command again as root/Administrator.
+134 verbose exit [ -13, true ]
