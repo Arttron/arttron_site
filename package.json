@@ -4,6 +4,7 @@
   "description": "my personal site",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp-w",
     "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

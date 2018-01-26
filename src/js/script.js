@@ -1,7 +1,6 @@
 //= lodash.core.min.js
 //= particles.min.js
 (function () {
-    console.log("Hello");
     function random(min, max) {
         var rand = min + Math.random() * (max + 1 - min);
         rand = Math.floor(rand);
@@ -127,9 +126,22 @@
     );
     let progressComplit = true;
     let form = document.querySelector('.contact__form');
-
     form.addEventListener('submit', (e)=>{
         e.preventDefault();
+        let formData = new FormData(document.getElementById("form__mail"));
+        $.ajax({
+            method: "POST",
+            url: "mail.php",
+            processData: false,
+            contentType: false,
+            data: formData
+            })
+            .done(function( msg ) {
+              console.dir(msg);
+            }).
+            fail(function() {
+              console.error( "error" );
+            });
     });
     document.addEventListener('scroll', ()=> {
       if(window.pageYOffset >= 1482 || window.pageYOffset<=900 && !progressComplit){
@@ -143,9 +155,6 @@
           _.forEach(document.querySelectorAll('.skylls__item progress'), function(e){e.value = random(40, 100);});
         }, 0);
       }
-      // console.log(window.pageYOffset);
     });
- 
-
   
 }());
