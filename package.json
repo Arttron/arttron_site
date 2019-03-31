@@ -4,14 +4,15 @@
   "description": "my personal site",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp-w",
     "gulp": "gulp",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
+    "gulp-cli": "latest",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
