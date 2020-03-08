@@ -1,27 +1,21 @@
 {
-  "name": "arttron",
+  "name": "svelte-app",
   "version": "1.0.0",
-  "description": "my personal site",
-  "main": "index.js",
   "scripts": {
-    "gulp": "gulp",
-    "start": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp-cli": "latest",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.0.0",
-    "gulp-imagemin": "^3.3.0",
-    "gulp-rigger": "^0.5.8",
-    "gulp-rm": "^1.0.4",
-    "gulp-sass": "^3.1.0",
-    "gulp-svg-sprites": "^4.1.2",
-    "gulp-watch": "^4.3.11"
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.4"
   }
 }

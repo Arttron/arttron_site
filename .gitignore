@@ -1,2 +1,4 @@
 node_modules/
-site/
+public/build/
+
+.DS_Store
